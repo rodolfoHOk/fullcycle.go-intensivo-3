@@ -75,3 +75,5 @@
 - go build -o "hello"
 
 - ./hello
+
+- GOOS=windows go build -o "hello.exe"
