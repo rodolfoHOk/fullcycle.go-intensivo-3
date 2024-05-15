@@ -77,3 +77,37 @@
 - ./hello
 
 - GOOS=windows go build -o "hello.exe"
+
+## Go: Alta Performance, Multithreading e Profiling na prática
+
+### Sobre o Go
+
+![slide-29](/files/slide-29.png)
+
+![slide-30](/files/slide-30.png)
+
+![slide-31](/files/slide-31.png)
+
+![slide-32](/files/slide-32.png)
+
+![slide-33](/files/slide-33.png)
+
+![slide-34](/files/slide-34.png)
+
+![slide-35](/files/slide-35.png)
+
+![slide-36](/files/slide-36.png)
+
+![slide-37](/files/slide-37.png)
+
+![slide-38](/files/slide-38.png)
+
+![slide-39](/files/slide-39.png)
+
+![slide-40](/files/slide-40.png)
+
+![slide-41](/files/slide-41.png)
+
+### Código fonte
+
+[Código fonte](day2/)
