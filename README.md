@@ -111,3 +111,46 @@
 ### Código fonte
 
 [Código fonte](day2/)
+
+## Go: API sem Framework, gRPC e Profiling
+
+### Código fonte
+
+[Código fonte](day3/)
+
+### Comandos
+
+- go mod tidy
+
+### Profiling
+
+- endpoint: http://localhost:6060/debug/pprof
+
+- go tool pprof -seconds 5 http://localhost:6060/debug/pprof/profile
+
+  - top
+  - list CPUIntensiveEndpoint
+  - web
+
+- go test -bench=. -benchmem -memprofile mem1.prof -cpuprofile cpu1.prof -count 10 > 1.bench
+
+- go test -bench=. -benchmem -memprofile mem2.prof -cpuprofile cpu2.prof -count 10 > 2.bench
+
+- benchstat 1.bench 2.bench
+
+- go tool pprof cpu1.prof
+
+  - top
+
+- go tool pprof cpu2.prof
+
+  - top
+
+- go tool pprof mem1.prof
+
+  - top
+
+- go tool pprof mem2.prof
+
+  - top
+  - list GenerateLargeString
